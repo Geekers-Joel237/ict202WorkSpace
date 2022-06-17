@@ -12,6 +12,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { ProfilUserComponent } from './profil-user/profil-user.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     NavbarComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfilUserComponent
   ],
   imports: [
     BrowserModule,
