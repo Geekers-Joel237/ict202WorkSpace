@@ -10,7 +10,6 @@
     <h2>CREEZ UN PROFIL</h2>
 </header>
 
-
 <section>
     <div class="cadreImageProfil"><img src="https://cdn3.vectorstock.com/i/1000x1000/50/07/default-photo-profil-icon-flat-vector-31995007.jpg"></div>
     <div class="cadreMonProfil"> 
@@ -21,30 +20,39 @@
 
     <form method="post" action="traitement.php">
         <p>
-            <label for="pseudo">Noms</label> : <input type="text" name="pseudo" id="pseudo" />
+            <label for="pseudo">Noms </label> :
+            <input type="texte" placeholder="Comme dans lacte de naissance"/>
         </p>
     </form>
     <form method="post" action="traitement.php">
         <p>
-            <label for="pseudo">Prénoms</label> : <input type="text" name="pseudo" id="pseudo" />
+            <label for="pseudo">Prénoms</label> : 
+            <input type="text" placeholder="comme dans l'acte de naissance" />
         </p>
      </form>
      <form method="post" action="traitement.php">
         <p>
-            <label for="pseudo">Date de naissance</label> : <input type="text" name="pseudo" id="pseudo" />
+            <label for="pseudo">Date de naissance</label> : 
+            <input type="text" placeholder="suivant le format jj/MM/AAAA" />
         </p>
      </form>
      <form method="post" action="traitement.php">
         <p>
-            <label for="pseudo">Contact(s)</label> : <input type="text" name="pseudo" id="pseudo" />
+            <label for="pseudo">Contact(s)</label> : 
+            <input type="text" placeholder="Ex: +237 655 55 55 55" />
         </p>
      </form>
      
      <form method="post" action="traitement.php">
         <p>
-            <label for="pseudo">E-mail</label> : <input type="text" name="pseudo" id="pseudo" />
+            <label for="pseudo">E-mail</label> : 
+            <input type="text" name="pseudo" id="pseudo" placeholder="adresseemail@gmail.com"/>
         </p>
      </form>
+
+<div>
+    <button class="btn btn-primary btn-lg btn-block" type="submit" routerLink="profil-user">profil resultant</button>
+</div>
 
 <footer>
     <p>Au revoir!</p>
