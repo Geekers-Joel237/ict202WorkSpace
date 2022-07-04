@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { FormationPageRoutingModule } from './formation-routing.module';
 
-import { HomePage } from './home.page';
+import { FormationPage } from './formation.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,8 @@ import { HomePage } from './home.page';
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    HomePageRoutingModule
+    FormationPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [FormationPage]
 })
-export class HomePageModule {}
+export class FormationPageModule {}

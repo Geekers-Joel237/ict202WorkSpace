@@ -29,7 +29,20 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
     
+  },
+  {
+    path: 'formation',
+    loadChildren: () => import('./pages/formation/formation.module').then( m => m.FormationPageModule)
+  },
+  {
+    path: 'competence',
+    loadChildren: () => import('./pages/competence/competence.module').then( m => m.CompetencePageModule)
+  },
+  {
+    path: 'experience',
+    loadChildren: () => import('./pages/experience/experience.module').then( m => m.ExperiencePageModule)
   }
+  
 
 ];
 

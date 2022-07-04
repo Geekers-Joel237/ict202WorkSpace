@@ -4,11 +4,19 @@ export const environment = {
 
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBPSl4SJppOaKAklGOY-sqXzBsgQ51H5Tc",
-  authDomain: "cvict4d.firebaseapp.com",
-  projectId: "cvict4d",
-  storageBucket: "cvict4d.appspot.com",
-  messagingSenderId: "160531567859",
-  appId: "1:160531567859:web:7ad2af8207b81d41e9d386",
-  measurementId: "G-4NR509PSDN"
+  apiKey: "AIzaSyB7d2M4tAoyyEM7Z9CmUKheJGCy6_AZBWU",
+
+  authDomain: "cv-builder-application-12208.firebaseapp.com",
+
+  projectId: "cv-builder-application-12208",
+
+  storageBucket: "cv-builder-application-12208.appspot.com",
+
+  messagingSenderId: "165292202779",
+
+  appId: "1:165292202779:web:f905623a49e740183711be",
+
+  measurementId: "G-02NPGKFYHF"
+
+
   };
