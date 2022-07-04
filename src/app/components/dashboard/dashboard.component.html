@@ -1,0 +1,61 @@
+<!-- <p>dashboard works!</p>
+<div>
+  <p *ngIf="user$ | async as user" class="lead">
+    Welcome {{user.email}}
+  </p>
+</div> -->
+
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 text-light bg-dark">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+              <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <span class="fs-5 d-none d-sm-inline">Menu</span>
+              </a>
+              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start "  id="menu">
+                  <li class="nav-item">
+                      <a  class="nav-link align-middle px-0" routerLink="competences">
+                          <i class="fas fa-certificate"></i> <span class="ms-1 me-2 d-none d-sm-inline">Competences</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a  class="nav-link px-0 align-middle" routerLink="formations">
+                          <i class="fas fa-tools"></i> <span class="ms-1 me-2 d-none d-sm-inline">Formations</span> </a>
+                  </li>
+                  <li>
+                      <a  class="nav-link px-0 align-middle" routerLink="experiences">
+                          <i class="fas fa-briefcase"></i> <span class="ms-1 me-2 d-none d-sm-inline">Experiences</span></a>
+                  </li>
+                  <li>
+                      <a  class="nav-link px-0 align-middle " routerLink="certifications">
+                          <i class="fas fa-certificate"></i> <span class="ms-1 me-2 d-none d-sm-inline">Certifications</span></a>
+                  </li>
+                  <li>
+                      <a class="nav-link px-0 align-middle" routerLink="loisirs">
+                          <i class="fas fa-futbol"></i> <span class="ms-1 me-2 d-none d-sm-inline">Loisirs</span> </a>
+                  </li>
+                  <li>
+                      <a  class="nav-link px-0 align-middle" routerLink="langages">
+                          <i class="fas fa-language"></i> <span class="ms-1 me-2 d-none d-sm-inline">Langues</span> </a>
+                  </li>
+                  <li>
+                    <a  class="nav-link px-0 align-middle" routerLink="liens">
+                        <i class="fas fa-link"></i> <span class="ms-1 me-2 d-none d-sm-inline">Liens</span> </a>
+                </li>
+                <li>
+                  <a  class="nav-link px-0 align-middle" routerLink="getPdf">
+                      <i class="fas fa-file-pdf"></i> <span class="ms-1 me-2 d-none d-sm-inline">PDF</span> </a>
+              </li>
+              </ul>
+              <hr>
+
+          </div>
+      </div>
+      <div class="col py-3">
+          <h3>Left Sidebar with Submenus</h3>
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
+
+

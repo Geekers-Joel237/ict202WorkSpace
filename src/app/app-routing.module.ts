@@ -1,17 +1,61 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import {canActivate,redirectUnauthorizedTo,redirectLoggedInTo} from '@angular/fire/auth-guard'
+import { CompetencesComponent } from './components/GestionCompetences/competences/competences.component';
+import { EditCompetenceComponent } from './components/GestionCompetences/competences/edit-competence/edit-competence.component';
+import { SettingsComponent } from './components/GestionUser/settings/settings.component';
+import { GetPdfComponent } from './components/GestionPdf/get-pdf/get-pdf.component';
+import { CertificationsComponent } from './components/GestionCertifications/certifications/certifications.component';
+import { ExperiencesComponent } from './components/GestionExperiences/experiences/experiences.component';
+import { LangagesComponent } from './components/GestionLangages/langages/langages.component';
+import { FormationsComponent } from './components/GestionFormations/formations/formations.component';
+import { LoisirsComponent } from './components/GestionLoisirs/loisirs/loisirs.component';
+import { LiensComponent } from './components/GestionLiens/liens/liens.component';
+import { EditFormationComponent } from './components/GestionFormations/edit-formation/edit-formation.component';
+
+const redirectToLogin = () => redirectUnauthorizedTo(['login']);
+const redirectToHome = () => redirectLoggedInTo(['dashboard']);
 
 const routes: Routes = [
-  {path:"",component:HomeComponent}, 
-  {path:"login",component:LoginComponent},
-  {path:"register",component:RegisterComponent},
+  {path:"",pathMatch:'full', component:HomeComponent},
+  {path:"login",component:LoginComponent,...canActivate(redirectToHome)},
+  {path:"register",component:RegisterComponent,...canActivate(redirectToHome)},
+  {
+    path:"dashboard",
+    component:DashboardComponent,
+    ...canActivate(redirectToLogin),
+    children: [
+      {path:"competences",component:CompetencesComponent},
+      {path:"formations",component:FormationsComponent},
+      {path:"experiences",component:ExperiencesComponent},
+      {path:"certifications",component:CertificationsComponent},
+      {path:"loisirs",component:LoisirsComponent},
+      {path:"langages",component:LangagesComponent},
+      {path:"liens",component:LiensComponent},
+      {path:"getPdf",component:GetPdfComponent},
+
+
+
+    ]
+  },
+  {path:"editCompetence/:id",component:EditCompetenceComponent},
+  {path:"editFormation/:id",component:EditFormationComponent},
+  {path:"settings",component:SettingsComponent},
+
+    
+
+
+
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [CommonModule, RouterModule]
 })
 export class AppRoutingModule { }
