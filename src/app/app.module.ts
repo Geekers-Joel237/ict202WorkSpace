@@ -38,6 +38,14 @@ import { LoisirsComponent } from './components/GestionLoisirs/loisirs/loisirs.co
 import { LiensComponent } from './components/GestionLiens/liens/liens.component';
 import { EditFormationComponent } from './components/GestionFormations/edit-formation/edit-formation.component';
 import { FormationsListComponent } from './components/GestionFormations/formations-list/formations-list.component';
+import { EditExperienceComponent } from './components/GestionExperiences/edit-experience/edit-experience.component';
+import { ExperiencesListComponent } from './components/GestionExperiences/experiences-list/experiences-list.component';
+import { LangagesListComponent } from './components/GestionLangages/langages-list/langages-list.component';
+import { EditLangageComponent } from './components/GestionLangages/edit-langage/edit-langage.component';
+import { CertificationsListComponent } from './components/GestionCertifications/certifications/certifications-list/certifications-list.component';
+import { EditCertificationComponent } from './components/GestionCertifications/certifications/edit-certification/edit-certification.component';
+import { LoisirsListComponent } from './components/GestionLoisirs/loisirs-list/loisirs-list.component';
+import { EditLoisirComponent } from './components/GestionLoisirs/edit-loisir/edit-loisir.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +68,14 @@ import { FormationsListComponent } from './components/GestionFormations/formatio
     LiensComponent,
     EditFormationComponent,
     FormationsListComponent,
+    EditExperienceComponent,
+    ExperiencesListComponent,
+    LangagesListComponent,
+    EditLangageComponent,
+    CertificationsListComponent,
+    EditCertificationComponent,
+    LoisirsListComponent,
+    EditLoisirComponent,
 
   ],
   imports: [

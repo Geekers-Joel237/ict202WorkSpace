@@ -1,17 +1,14 @@
-<!--<p>loisirs works!</p>-->
+<!--<p>edit-loisir works!</p>-->
 <div class="container">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Loisirs
-          <button class="btn btn-primary ms-2" (click)="onRegister()"><i class="fas fa-plus-circle"></i></button>
-          <span class="badge rounded-pill bg-success ms-4" *ngIf="loisirs">{{loisirs.length}}</span>
+        <h5 class="card-title">Edit Loisir
         </h5>
       </div>
     </div>
-  
     <div class="card">
       <div class="card-body">
-        <form [formGroup]="loisirFormGroup">
+        <form [formGroup]="loisirFormGroup" *ngIf="loisirFormGroup" (ngSubmit)="onUpdateLoisir()">
           <div class="mb-3">
             <input
             type="text"
@@ -22,13 +19,9 @@
           <!-- <div *ngIf="title?.invalid && (title?.dirty || title?.touched)"
           class="alert alert-danger"> Title is Required</div> -->
           
-      <!-- <button type="submit" class="btn btn-success ">Save</button> -->
+          <button type="submit" class="btn btn-success ">Save</button>
   
         </form>
       </div>
     </div>
   </div>
-  <div class="container">
-    <app-loisirs-list [loisirsInput]="loisirs"></app-loisirs-list>
-  </div>
-  

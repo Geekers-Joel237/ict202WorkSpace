@@ -17,6 +17,12 @@ import { FormationsComponent } from './components/GestionFormations/formations/f
 import { LoisirsComponent } from './components/GestionLoisirs/loisirs/loisirs.component';
 import { LiensComponent } from './components/GestionLiens/liens/liens.component';
 import { EditFormationComponent } from './components/GestionFormations/edit-formation/edit-formation.component';
+//import { EditExperienceComponent } from './components/GestionExperiences/experiences/edit-experience/edit-experience.component';
+//import { EditCertificationComponent } from './components/GestionCertifications/edit-certification/edit-certification.component';
+import { EditLoisirComponent } from './components/GestionLoisirs/edit-loisir/edit-loisir.component';
+import { EditLangageComponent } from './components/GestionLangages/edit-langage/edit-langage.component';
+import { EditCertificationComponent } from './components/GestionCertifications/certifications/edit-certification/edit-certification.component';
+import { EditExperienceComponent } from './components/GestionExperiences/edit-experience/edit-experience.component';
 
 const redirectToLogin = () => redirectUnauthorizedTo(['login']);
 const redirectToHome = () => redirectLoggedInTo(['dashboard']);
@@ -45,6 +51,10 @@ const routes: Routes = [
   },
   {path:"editCompetence/:id",component:EditCompetenceComponent},
   {path:"editFormation/:id",component:EditFormationComponent},
+  {path:"editExperience/:id",component:EditExperienceComponent},
+  {path:"editCertification/:id",component:EditCertificationComponent},
+  {path:"editLangage/:id",component:EditLangageComponent},
+ {path:"editLoisir/:id",component:EditLoisirComponent},
   {path:"settings",component:SettingsComponent},
 
     
