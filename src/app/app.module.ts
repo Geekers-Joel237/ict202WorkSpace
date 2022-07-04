@@ -12,6 +12,10 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { ProfilUserComponent } from './profil-user/profil-user.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { ListeDesProfilsComponent } from './liste-des-profils/liste-des-profils.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +23,23 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     NavbarComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfilUserComponent,
+    ListeDesProfilsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot([
+      {path: '',component: HomeComponent},
+      {path: 'profil-user/id', component: ProfilUserComponent },
+      {path: '**', component: HomeComponent}
+    ]),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

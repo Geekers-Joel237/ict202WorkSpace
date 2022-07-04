@@ -1,0 +1,85 @@
+<!--<nav class="navigation">
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">REGISTER</a></li>
+        <li><a href="">PROFIL</a></li>
+        <li><a href="">DOWLOADING</a></li>
+    </ul>
+</nav>-->
+<header >
+    <h2 class="flow-text">CREEZ UN PROFIL</h2>
+</header>
+
+<section>
+    <div class="cadreImageProfil"><img src="../assets/images/photoDeProfil.jpg"></div>
+        <p class="cliquezSurImage">Cliquez sur l'image pour la changer </p>
+    <div class="cadreMonProfil"> 
+        <h1>MON PROFIL</h1>
+    </div>
+</section>
+
+
+    <form method="post" action="traitement.php">
+        <fieldset>
+            <legend> Informations de base </legend>
+        <p>
+            <label for="pseudo">Noms </label> :
+            <input type="texte" placeholder="Comme dans lacte de naissance"/>
+        </p>
+    
+    
+        <p>
+            <label for="pseudo">Prénoms</label> : 
+            <input type="text" placeholder="comme dans l'acte de naissance" />
+        </p>
+     
+     
+        <p>
+            <label for="pseudo">Date de naissance</label> : 
+            <input type="date" placeholder="suivant le format jj/MM/AAAA" />
+        </p>
+     
+        <p>
+            <label for="pseudo">Contact(s)</label> : 
+            <input type="tel" placeholder="Ex: +237 655 55 55 55" />
+        </p>
+     
+        <p>
+            <label for="pseudo">E-mail</label> : 
+            <input type="text" name="pseudo" id="pseudo" placeholder="adresseemail@gmail.com"/>
+        </p>
+    </fieldset>
+
+     <fieldset>
+        <legend> Potentiel </legend>
+        <p>
+            <label for="pseudo">Experience professionnelle :</label>
+            <textarea name="ameliorer" id="ameliorer" rows="5" cols="40" >
+           Bref résumé de votre experience professionnelle
+            </textarea>
+        </p>
+ 
+        <p>
+            <label for="pseudo">Diplômes :</label>
+            <textarea name="ameliorer" id="ameliorer" rows="5" cols="40" >
+           Listez vos diplômes en précisant le domaine et l'année d'obtension
+            </textarea>
+        </p>
+    
+        <p>
+            <label for="pseudo">Competenses :</label>
+            <textarea name="ameliorer" id="ameliorer" rows="5" cols="40" >
+           Citez vos competences en précisant le domaine
+            </textarea>
+        </p>
+    </fieldset><br/>
+    <input class="buttonEnregistrer" type="button" value="Enregistrer" />
+     </form><br/>
+
+<div class="voirLeResultat">
+    <button class="btn btn-primary btn-lg btn-block" type="submit" routerLink="profil-user">Voir le resultat</button>
+</div>
+
+<footer>
+    <p>Au revoir!</p>
+</footer>
