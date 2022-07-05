@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import {AuthGuard} from 'src/app/guards/auth.guard'
+import {AuthGuard} from 'src/app/guards/auth.guard';
 const routes: Routes = [
   {
     path: '',
@@ -41,6 +41,18 @@ const routes: Routes = [
   {
     path: 'experience',
     loadChildren: () => import('./pages/experience/experience.module').then( m => m.ExperiencePageModule)
+  },
+  {
+    path: 'langue',
+    loadChildren: () => import('./pages/langue/langue.module').then( m => m.LanguePageModule)
+  },
+  {
+    path: 'loisir',
+    loadChildren: () => import('./pages/loisir/loisir.module').then( m => m.LoisirPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
   }
   
 
