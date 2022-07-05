@@ -10,6 +10,7 @@ export class HomePage implements OnInit {
 
 
   public pages: any[] = [
+    {title: 'PROFILE', url: '/profile', icon: 'information-circle'},
     {title: 'FORMATIONS', url: '/formation', icon: 'information-circle'},
     {title: 'COMPETANCES', url: '/competence', icon: 'podium'},
     {title: 'EXPERIENCES', url: '/experience', icon: 'color-wand'},

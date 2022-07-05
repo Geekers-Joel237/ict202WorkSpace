@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button [routerLink]="['/home']">Back Home</ion-button>
+
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="title">Profile</h1>
+
+  <div class="profile-info">
+    <ion-item>
+      <ion-label position="floating">Noms et Prenom</ion-label>
+      <ion-input value="roger atangana"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date de naissance</ion-label>
+      <ion-input value="15-04-1990"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">ville</ion-label>
+      <ion-input value="Yaounde"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Gender</ion-label>
+      <ion-input value="Male"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contact</ion-label>
+      <ion-input value="leo@gmail.com"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input value="+237 694693211"></ion-input>
+    </ion-item>
+  </div>
+</ion-content>
