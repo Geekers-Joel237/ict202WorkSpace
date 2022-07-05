@@ -46,6 +46,8 @@ import { CertificationsListComponent } from './components/GestionCertifications/
 import { EditCertificationComponent } from './components/GestionCertifications/certifications/edit-certification/edit-certification.component';
 import { LoisirsListComponent } from './components/GestionLoisirs/loisirs-list/loisirs-list.component';
 import { EditLoisirComponent } from './components/GestionLoisirs/edit-loisir/edit-loisir.component';
+import { LiensListComponent } from './components/GestionLiens/liens-list/liens-list.component';
+import { EditLienComponent } from './components/GestionLiens/edit-lien/edit-lien.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +78,8 @@ import { EditLoisirComponent } from './components/GestionLoisirs/edit-loisir/edi
     EditCertificationComponent,
     LoisirsListComponent,
     EditLoisirComponent,
+    LiensListComponent,
+    EditLienComponent,
 
   ],
   imports: [

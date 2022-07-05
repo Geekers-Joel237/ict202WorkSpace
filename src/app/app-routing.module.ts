@@ -23,6 +23,7 @@ import { EditLoisirComponent } from './components/GestionLoisirs/edit-loisir/edi
 import { EditLangageComponent } from './components/GestionLangages/edit-langage/edit-langage.component';
 import { EditCertificationComponent } from './components/GestionCertifications/certifications/edit-certification/edit-certification.component';
 import { EditExperienceComponent } from './components/GestionExperiences/edit-experience/edit-experience.component';
+import { EditLienComponent } from './components/GestionLiens/edit-lien/edit-lien.component';
 
 const redirectToLogin = () => redirectUnauthorizedTo(['login']);
 const redirectToHome = () => redirectLoggedInTo(['dashboard']);
@@ -54,7 +55,8 @@ const routes: Routes = [
   {path:"editExperience/:id",component:EditExperienceComponent},
   {path:"editCertification/:id",component:EditCertificationComponent},
   {path:"editLangage/:id",component:EditLangageComponent},
- {path:"editLoisir/:id",component:EditLoisirComponent},
+  {path:"editLoisir/:id",component:EditLoisirComponent},
+ {path:"editeditlien/:id",component:EditLienComponent},
   {path:"settings",component:SettingsComponent},
 
     
