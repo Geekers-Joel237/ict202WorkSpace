@@ -43,7 +43,7 @@ export class LiensComponent implements OnInit {
  
    get title(){return this.liensFormGroup.get('title');}
  
-   get url(){return this.liensFormGroup.get('level');}
+   get url(){return this.liensFormGroup.get('url');}
   
  
  
