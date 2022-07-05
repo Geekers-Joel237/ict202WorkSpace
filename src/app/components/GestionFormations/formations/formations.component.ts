@@ -23,7 +23,7 @@ export class FormationsComponent implements OnInit {
     this.formationFormGroup = this.fb.group({
       diplome:['',Validators.required],
       ecole:['',Validators.required],
-      periode:['',Validators.required],
+       periode:['',Validators.required],
       categorie:['',Validators.required],
     })
 
