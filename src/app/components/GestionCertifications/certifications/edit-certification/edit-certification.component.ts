@@ -24,6 +24,7 @@ export class EditCertificationComponent implements OnInit {
     this.dataService.getCertificationById(this.certificationId).subscribe(
       (data)=>{
         this.ancien = data;
+        this.ancien.id = this.certificationId;
       }
     )
    }

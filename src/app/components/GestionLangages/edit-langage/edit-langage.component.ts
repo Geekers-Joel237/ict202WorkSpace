@@ -24,6 +24,7 @@ export class EditLangageComponent implements OnInit {
     this.dataService.getLangueById(this.langageId).subscribe(
       (data)=>{
         this.ancien = data;
+        this.ancien.id = this.langageId;
       }
     )
   }

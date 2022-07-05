@@ -23,6 +23,7 @@ export class EditExperienceComponent implements OnInit {
     this.dataService.getExperienceById(this.experienceId).subscribe(
       (data)=>{
         this.ancien = data;
+        this.ancien.id = this.experienceId;
       }
     )
   }

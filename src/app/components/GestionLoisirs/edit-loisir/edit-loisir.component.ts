@@ -25,6 +25,7 @@ export class EditLoisirComponent implements OnInit {
     this.dataService.getLoisirById(this.loisirId).subscribe(
       (data)=>{
         this.ancien = data;
+        this.ancien.id = this.loisirId;
       }
     )
    }

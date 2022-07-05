@@ -24,6 +24,7 @@ export class EditFormationComponent implements OnInit {
     this.dataService.getFormationsById(this.formationId).subscribe(
       (data)=>{
         this.ancien = data;
+        this.ancien.id = this.formationId;
       }
     )
   }

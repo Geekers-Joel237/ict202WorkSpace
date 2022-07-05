@@ -24,6 +24,7 @@ export class EditLienComponent implements OnInit {
     this.dataService.getLiensById(this.lienId).subscribe(
       (data)=>{
         this.ancien = data;
+        this.ancien.id = this.lienId;
       }
     )
   }

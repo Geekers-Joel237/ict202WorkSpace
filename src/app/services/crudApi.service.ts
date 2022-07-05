@@ -51,7 +51,7 @@ export class DataService {
 
   updateCompetence(ancien:ICompetence ,comp: ICompetence){
     let currentUser = firebase.default.auth().currentUser;
-    this.firestore.collection('users').doc(currentUser?.uid).collection('competences').doc(comp.id).update(ancien);
+    this.firestore.collection('users').doc(currentUser?.uid).collection('competences').doc(ancien.id).update(comp);
   }
 
   deleteCompetence(comp: ICompetence){
@@ -89,7 +89,7 @@ export class DataService {
 
   updateFormation(ancien:IFormation ,comp: IFormation){
     let currentUser = firebase.default.auth().currentUser;
-    this.firestore.collection('users').doc(currentUser?.uid).collection('formations').doc(comp.id).update(ancien);
+    this.firestore.collection('users').doc(currentUser?.uid).collection('formations').doc(ancien.id).update(comp);
   }
 
   deleteFormation(comp: IFormation){
@@ -127,7 +127,7 @@ createCertification(comp: ICertification){
 
 updateCertification(ancien:ICertification ,comp: ICertification){
   let currentUser = firebase.default.auth().currentUser;
-  this.firestore.collection('users').doc(currentUser?.uid).collection('certifications').doc(comp.id).update(ancien);
+  this.firestore.collection('users').doc(currentUser?.uid).collection('certifications').doc(ancien.id).update(comp);
 }
 
 deleteCertification(comp: ICertification){
@@ -166,7 +166,7 @@ createExperience(comp: IExperience){
 
 updateExperience(ancien:IExperience ,comp: IExperience){
   let currentUser = firebase.default.auth().currentUser;
-  this.firestore.collection('users').doc(currentUser?.uid).collection('experiences').doc(comp.id).update(ancien);
+  this.firestore.collection('users').doc(currentUser?.uid).collection('experiences').doc(ancien.id).update(comp);
 }
 
 deleteExperience(comp: IExperience){
@@ -205,7 +205,7 @@ createLoisir(comp: ILoisir){
 
 updateLoisir(ancien:ILoisir ,comp: ILoisir){
   let currentUser = firebase.default.auth().currentUser;
-  this.firestore.collection('users').doc(currentUser?.uid).collection('loisirs').doc(comp.id).update(ancien);
+  this.firestore.collection('users').doc(currentUser?.uid).collection('loisirs').doc(ancien.id).update(comp);
 }
 
 deleteLoisir(comp: ILoisir){
@@ -243,7 +243,7 @@ createLangue(comp: ILangage){
 
 updateLangue(ancien:ILangage ,comp: ILangage){
   let currentUser = firebase.default.auth().currentUser;
-  this.firestore.collection('users').doc(currentUser?.uid).collection('langues').doc(comp.id).update(ancien);
+  this.firestore.collection('users').doc(currentUser?.uid).collection('langues').doc(ancien.id).update(comp);
 }
 
 deleteLangue(comp: ILangage){
@@ -281,7 +281,7 @@ createLien(comp: ILien){
 
 updateLien(ancien:ILien ,comp: ILien){
   let currentUser = firebase.default.auth().currentUser;
-  this.firestore.collection('users').doc(currentUser?.uid).collection('liens').doc(comp.id).update(ancien);
+  this.firestore.collection('users').doc(currentUser?.uid).collection('liens').doc(ancien.id).update(comp);
 }
 
 deleteLien(comp: ILien){

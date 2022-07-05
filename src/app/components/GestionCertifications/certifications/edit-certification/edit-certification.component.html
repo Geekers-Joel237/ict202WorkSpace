@@ -1,1 +1,44 @@
-<p>edit-certification works!</p>
+<!--<p>edit-certification works!</p>-->
+<div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Edit Certification
+        </h5>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <form [formGroup]="certificationFormGroup" *ngIf="certificationFormGroup" (ngSubmit)="onUpdateCertification()">
+          <div class="mb-3">
+            <input
+            type="text"
+            class="form-control"
+            formControlName="title"
+            placeholder="Enter Tiltle ...">
+          </div>
+          <!-- <div *ngIf="title?.invalid && (title?.dirty || title?.touched)"
+          class="alert alert-danger"> Title is Required</div> -->
+          <div class="mb-3">
+            <input
+            type="text"
+            class="form-control"
+            formControlName="organisme"
+            placeholder="Enter organism...">
+          </div>
+          <div class="mb-3">
+            <select
+            class="form-control"
+            formControlName="categorie"
+            placeholder="Category ..."
+            >
+              <option value="Web Developer">Web Developer</option>
+              <option value="Mobile Developer">Mobile Developer</option>
+  
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success ">Save</button>
+  
+        </form>
+      </div>
+    </div>
+  </div>

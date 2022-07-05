@@ -24,6 +24,7 @@ export class EditCompetenceComponent implements OnInit {
     this.dataService.getCompetencesById(this.competenceId).subscribe(
       (data)=>{
         this.ancien = data;
+        this.ancien.id = this.competenceId;
       }
     )
   }
